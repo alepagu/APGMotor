@@ -40,6 +40,14 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
             return create("junit");
     }
 
+        /**
+         * Creates a dependency provider for material (com.google.android.material:material)
+         * This dependency was declared in catalog libs.versions.toml
+         */
+        public Provider<MinimalExternalModuleDependency> getMaterial() {
+            return create("material");
+    }
+
     /**
      * Returns the group of libraries at androidx
      */
@@ -77,6 +85,22 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
         private final AndroidxUiLibraryAccessors laccForAndroidxUiLibraryAccessors = new AndroidxUiLibraryAccessors(owner);
 
         public AndroidxLibraryAccessors(AbstractExternalDependencyFactory owner) { super(owner); }
+
+            /**
+             * Creates a dependency provider for appcompat (androidx.appcompat:appcompat)
+             * This dependency was declared in catalog libs.versions.toml
+             */
+            public Provider<MinimalExternalModuleDependency> getAppcompat() {
+                return create("androidx.appcompat");
+        }
+
+            /**
+             * Creates a dependency provider for constraintlayout (androidx.constraintlayout:constraintlayout)
+             * This dependency was declared in catalog libs.versions.toml
+             */
+            public Provider<MinimalExternalModuleDependency> getConstraintlayout() {
+                return create("androidx.constraintlayout");
+        }
 
             /**
              * Creates a dependency provider for junit (androidx.test.ext:junit)
@@ -138,9 +162,17 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
 
     }
 
-    public static class AndroidxActivityLibraryAccessors extends SubDependencyFactory {
+    public static class AndroidxActivityLibraryAccessors extends SubDependencyFactory implements DependencyNotationSupplier {
 
         public AndroidxActivityLibraryAccessors(AbstractExternalDependencyFactory owner) { super(owner); }
+
+            /**
+             * Creates a dependency provider for activity (androidx.activity:activity)
+             * This dependency was declared in catalog libs.versions.toml
+             */
+            public Provider<MinimalExternalModuleDependency> asProvider() {
+                return create("androidx.activity");
+        }
 
             /**
              * Creates a dependency provider for compose (androidx.activity:activity-compose)
@@ -309,6 +341,14 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
         public VersionAccessors(ProviderFactory providers, DefaultVersionCatalog config) { super(providers, config); }
 
             /**
+             * Returns the version associated to this alias: activity (1.8.0)
+             * If the version is a rich version and that its not expressible as a
+             * single version string, then an empty string is returned.
+             * This version was declared in catalog libs.versions.toml
+             */
+            public Provider<String> getActivity() { return getVersion("activity"); }
+
+            /**
              * Returns the version associated to this alias: activityCompose (1.9.0)
              * If the version is a rich version and that its not expressible as a
              * single version string, then an empty string is returned.
@@ -325,12 +365,28 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
             public Provider<String> getAgp() { return getVersion("agp"); }
 
             /**
+             * Returns the version associated to this alias: appcompat (1.6.1)
+             * If the version is a rich version and that its not expressible as a
+             * single version string, then an empty string is returned.
+             * This version was declared in catalog libs.versions.toml
+             */
+            public Provider<String> getAppcompat() { return getVersion("appcompat"); }
+
+            /**
              * Returns the version associated to this alias: composeBom (2023.08.00)
              * If the version is a rich version and that its not expressible as a
              * single version string, then an empty string is returned.
              * This version was declared in catalog libs.versions.toml
              */
             public Provider<String> getComposeBom() { return getVersion("composeBom"); }
+
+            /**
+             * Returns the version associated to this alias: constraintlayout (2.1.4)
+             * If the version is a rich version and that its not expressible as a
+             * single version string, then an empty string is returned.
+             * This version was declared in catalog libs.versions.toml
+             */
+            public Provider<String> getConstraintlayout() { return getVersion("constraintlayout"); }
 
             /**
              * Returns the version associated to this alias: coreKtx (1.13.0)
@@ -379,6 +435,14 @@ public class LibrariesForLibs extends AbstractExternalDependencyFactory {
              * This version was declared in catalog libs.versions.toml
              */
             public Provider<String> getLifecycleRuntimeKtx() { return getVersion("lifecycleRuntimeKtx"); }
+
+            /**
+             * Returns the version associated to this alias: material (1.11.0)
+             * If the version is a rich version and that its not expressible as a
+             * single version string, then an empty string is returned.
+             * This version was declared in catalog libs.versions.toml
+             */
+            public Provider<String> getMaterial() { return getVersion("material"); }
 
     }
 

@@ -14,33 +14,12 @@ import com.example.apgmotor.ui.theme.APGMotorTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        //Pantalla con logo de aplicación
+        Thread.sleep(2000)
+        //setTheme(R.layout.activity_pantalla_logo_apgmotor)
+        //Preparación de la aplicación
         super.onCreate(savedInstanceState)
-        setContent {
-            APGMotorTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Login("Android")
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun Login(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun LoginPreview() {
-    APGMotorTheme {
-        Login("Android")
+        setContentView(R.layout.login_apgmotor)
+        //setContentView(R.layout.registro_apgmotor)
     }
 }
