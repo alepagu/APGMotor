@@ -13,6 +13,12 @@
         android:theme="@style/Theme.APGMotor"
         tools:targetApi="31">
         <activity
+            android:name=".nuevovehiculo_apgmotor"
+            android:exported="false" />
+        <activity
+            android:name=".paginaprincipal_apgmotor"
+            android:exported="false" />
+        <activity
             android:name=".pantalla_logo_apgmotor"
             android:exported="false" />
         <activity
