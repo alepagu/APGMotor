@@ -11,6 +11,16 @@
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml">
+        <config>
+          <theme>@style/Theme.APGMotor</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion_apgmotor.xml">
+        <config>
+          <theme>@style/Theme.APGMotor</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_nuevovehiculo_apgmotor.xml">
         <config>
           <theme>@style/Theme.APGMotor</theme>
@@ -42,7 +52,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="The commit includes login and registration of the application" />
+    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="The commit includes principal page and new vehicle of the application">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Cambiarcontrasenna_apgmotor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Configuracion_apgmotor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/cc2b028975840907b7fb1e51881c8eb4fceb3c17/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/cc2b028975840907b7fb1e51881c8eb4fceb3c17/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_paginaprincipal_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_paginaprincipal_apgmotor.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,6 +125,12 @@
       <recent name="com.example.apgmotor" />
     </key>
     <key name="android.template.-307807481">
+      <recent name="com.example.apgmotor" />
+    </key>
+    <key name="android.template.547387039">
+      <recent name="com.example.apgmotor" />
+    </key>
+    <key name="android.template.1491037552">
       <recent name="com.example.apgmotor" />
     </key>
   </component>
@@ -239,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715021473859</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="The commit includes principal page and new vehicle of the application">
+      <option name="closed" value="true" />
+      <created>1715021550608</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715021550608</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +295,7 @@
     <MESSAGE value="First Commit to create the login layout" />
     <MESSAGE value="First Commit to add the logo image" />
     <MESSAGE value="The commit includes login and registration of the application" />
-    <option name="LAST_COMMIT_MESSAGE" value="The commit includes login and registration of the application" />
+    <MESSAGE value="The commit includes principal page and new vehicle of the application" />
+    <option name="LAST_COMMIT_MESSAGE" value="The commit includes principal page and new vehicle of the application" />
   </component>
 </project>
