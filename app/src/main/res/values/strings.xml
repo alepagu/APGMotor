@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">APGMotor</string>
+    <string name="item_label">Temas Disponibles</string>
 </resources>

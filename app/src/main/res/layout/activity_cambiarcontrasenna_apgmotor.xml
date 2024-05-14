@@ -8,19 +8,6 @@
     android:background="#F4D086"
     tools:context=".Cambiarcontrasenna_apgmotor">
 
-    <ImageView
-        android:id="@+id/faq"
-        android:layout_width="95dp"
-        android:layout_height="95dp"
-        android:background="#F6A384"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034"
-        app:srcCompat="@drawable/icono_faq" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="419dp"
@@ -35,18 +22,17 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   CAMBIAR \n CONTRASEÑA"
+        android:layout_width="339dp"
+        android:layout_height="40dp"
+        android:text="CAMBIAR CONTRASEÑA"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.051" />
 
     <EditText
         android:id="@+id/editTextTextPassword"

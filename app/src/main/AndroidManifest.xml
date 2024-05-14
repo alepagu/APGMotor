@@ -8,10 +8,16 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_launcher_background"
+        android:roundIcon="@mipmap/ic_launcher_background"
         android:supportsRtl="true"
-        android:theme="@style/Theme.APGMotor"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
+        <activity
+            android:name=".ingresargastos_apgmotor"
+            android:exported="false" />
+        <activity
+            android:name=".planificarfecha_apgmotor"
+            android:exported="false" />
         <activity
             android:name=".Cambiarcontrasenna_apgmotor"
             android:exported="false" />
@@ -25,16 +31,13 @@
             android:name=".paginaprincipal_apgmotor"
             android:exported="false" />
         <activity
-            android:name=".pantalla_logo_apgmotor"
-            android:exported="false" />
-        <activity
             android:name=".Registro"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.APGMotor">
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
