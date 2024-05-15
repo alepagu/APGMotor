@@ -21,4 +21,12 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.apgmotor", appContext.packageName)
     }
+
+    @Test
+    fun ConnectDataBase() {
+
+        Basedatos_apgmotor.conexion()
+        Basedatos_apgmotor.main()
+    }
+
 }
