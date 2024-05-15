@@ -34,7 +34,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintVertical_bias="0.791" />
 
     <ScrollView
         android:layout_width="399dp"
@@ -56,7 +56,7 @@
                 android:layout_height="90sp" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/golfito"
                 android:layout_width="match_parent"
                 android:layout_height="249dp"
                 app:srcCompat="@drawable/golfito" />
@@ -73,5 +73,59 @@
                 app:srcCompat="@drawable/corsilla" />
         </LinearLayout>
     </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btn_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_av"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/inicio" />
+
+    <ImageButton
+        android:id="@+id/btn_vgastos"
+        android:layout_width="95dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toEndOf="@+id/btn_inicio"
+        app:layout_constraintTop_toBottomOf="@+id/btn_av"
+        app:layout_constraintVertical_bias="0.985"
+        app:srcCompat="@drawable/vergastos" />
+
+    <ImageButton
+        android:id="@+id/btn_vtestigos"
+        android:layout_width="81dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toEndOf="@+id/btn_vgastos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_av"
+        app:layout_constraintVertical_bias="0.663"
+        app:srcCompat="@drawable/vertestigos" />
+
+    <ImageButton
+        android:id="@+id/btn_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:background="#F4D086"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toEndOf="@+id/btn_vtestigos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_av"
+        app:layout_constraintVertical_bias="0.65"
+        app:srcCompat="@drawable/config" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 class Registro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //enableEdgeToEdge()
+        enableEdgeToEdge() //Se ajusta a las dimensiones del telefóno
         setContentView(R.layout.registro_apgmotor)
 
         //Añadir funcionalidad al botón Registrarme

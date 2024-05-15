@@ -1,6 +1,8 @@
 package com.example.apgmotor
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,12 @@ class ingresargastos_apgmotor : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_ingresargastos_apgmotor)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        //Añadir funcionalidad al botón de Añadir Gastos
+        val btngastos: Button = findViewById(R.id.btn_agregar)
+        btngastos.setOnClickListener{
+            val intent: Intent = Intent(this, paginaprincipal_apgmotor:: class.java)
+            startActivity(intent)
         }
     }
 }

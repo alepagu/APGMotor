@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.691" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_cambcont"
         android:layout_width="336dp"
         android:layout_height="56dp"
         android:background="#F6A384"
@@ -60,7 +60,7 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.263" />
 
     <Button
         android:id="@+id/button4"

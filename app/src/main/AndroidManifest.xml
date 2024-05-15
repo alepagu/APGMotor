@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".vergastos_apgmotor"
+            android:exported="false" />
+        <activity
             android:name=".ingresargastos_apgmotor"
             android:exported="false" />
         <activity

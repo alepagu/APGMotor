@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -25,6 +26,7 @@ class MainActivity : ComponentActivity() {
         setTheme(R.style.AppTheme)
         //Preparación de la aplicación
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge() //Se ajusta a las dimensiones del telefóno
         setContentView(R.layout.login_apgmotor)
 
         //Añadir funcionalidad al botón de Regístrate
