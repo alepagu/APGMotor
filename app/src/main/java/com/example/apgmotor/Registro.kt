@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Registro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +15,7 @@ class Registro : AppCompatActivity() {
         //Añadir funcionalidad al botón Registrarme
         val btnRegistrado: Button = findViewById(R.id.btnregistrar)
         btnRegistrado.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity:: class.java)
+            val intent: Intent = Intent(this, Login_apgmotor:: class.java)
             startActivity(intent)
         }
     }

@@ -41,5 +41,12 @@ class paginaprincipal_apgmotor : AppCompatActivity() {
             val intent: Intent = Intent(this, Configuracion_apgmotor:: class.java)
             startActivity(intent)
         }
+
+        //VER GASTOS
+        val btnvergastos: ImageButton = findViewById(R.id.btn_vgastos)
+        btnvergastos.setOnClickListener{
+            val intent: Intent = Intent(this, vergastos_apgmotor:: class.java)
+            startActivity(intent)
+        }
     }
 }

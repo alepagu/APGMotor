@@ -45,5 +45,19 @@ class Configuracion_apgmotor : AppCompatActivity() {
             }
         }
 
+        //Indicamos al botón de Preguntas frecuentes donde se debe dirigir.
+        val btnPreguntasFrecuentes: Button = findViewById(R.id.btn_faq)
+        btnPreguntasFrecuentes.setOnClickListener{
+            val intent: Intent = Intent(this, Preguntasfrecuentes_apgmotor:: class.java)
+            startActivity(intent)
+        }
+
+        //Función del botón planificar fecha
+        val btnplanificarFecha: Button = findViewById(R.id.btn_pfecha)
+        btnplanificarFecha.setOnClickListener{
+            val intent: Intent = Intent(this, planificarfecha_apgmotor:: class.java)
+            startActivity(intent)
+        }
+
     }
 }
