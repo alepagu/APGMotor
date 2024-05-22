@@ -85,7 +85,6 @@
         android:id="@+id/desplegabletemas"
         android:layout_width="336dp"
         android:layout_height="56dp"
-        android:background="#F6A384"
         android:spinnerMode="dropdown"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"

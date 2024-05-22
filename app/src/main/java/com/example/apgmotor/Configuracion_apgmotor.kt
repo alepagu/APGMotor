@@ -2,6 +2,7 @@ package com.example.apgmotor
 
 import android.content.Intent
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -13,6 +14,17 @@ import androidx.appcompat.app.AppCompatActivity
 
 class Configuracion_apgmotor : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Obtener las preferencias del usuario
+        val apg_preferencias = PreferenceManager.getDefaultSharedPreferences(this)
+        val apg_temas = apg_preferencias.getString("apg_temas", "Tema por Defecto")
+
+        // Establecer el tema según la preferencia del usuario
+        when (apg_temas) {
+            "Tema Claro" -> setTheme(R.style.AppTheme_Clarito)
+            "Tema Oscuro" -> setTheme(R.style.AppTheme_Oscurito)
+            else -> setTheme(R.style.AppTheme)
+        }
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_configuracion_apgmotor)
@@ -25,24 +37,31 @@ class Configuracion_apgmotor : AppCompatActivity() {
         }
 
        //Añadir lista de compornentes al Desplegable de esta pantalla
-        val desplegable: Spinner = findViewById(R.id.desplegabletemas)
+        val apg_desplegableTemas: Spinner = findViewById(R.id.desplegabletemas)
 
-        val opciones = arrayOf("Tema por Defecto", "Tema Claro", "Tema Oscuro")
+        val apg_opciones = arrayOf("Tema por Defecto", "Tema Claro", "Tema Oscuro")
 
         // Adaptador para que el desplegable recoja los valores
-        val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, opciones)
-        adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        desplegable.adapter = adaptador
+        val apg_adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, apg_opciones)
+        apg_adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        apg_desplegableTemas.adapter = apg_adaptador
 
-        // Funcionalidad del desplegable segúl la selección
-        desplegable.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        // Funcionalidad del desplegable según la selección obtenida
+        apg_desplegableTemas.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-                val opcionSeleccionada = opciones[position]
-                // Hacer algo con la opción seleccionada
+                val opcionSeleccionada = apg_opciones[position]
+                // Cambiar el tema según la opción seleccionada por el usuario
+                //Para la versión del 27/05/2024 solo se cambia el color al usar el desplegable
+                when (opcionSeleccionada) {
+                    "Tema por Defecto" -> setTheme(R.style.AppTheme)
+                    "Tema Claro" -> setTheme(R.style.AppTheme_Clarito)
+                    "Tema Oscuro" -> setTheme(R.style.AppTheme_Oscurito)
+                }
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
                 // Acción cuando no se ha seleccionado nada
+                setTheme(R.style.AppTheme)
             }
         }
 
@@ -68,6 +87,7 @@ class Configuracion_apgmotor : AppCompatActivity() {
 
             val intent: Intent = Intent(this, Login_apgmotor:: class.java)
             startActivity(intent)
+
         }
 
     }

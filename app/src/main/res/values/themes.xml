@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Tema claro -->
+    <style name="AppTheme.Clarito" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/primario</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <!-- Tema oscuro -->
+    <style name="AppTheme.Oscurito" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/secundario</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <!-- Tema por defecto -->
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/primario</item>
         <item name="colorSecondary">@color/secundario</item>
         <item name="colorAccent">@color/black</item>
     </style>
 
+    <!-- Pantalla de craga de la app -->
     <style name="SplashTheme" parent="AppTheme">
         <item name="android:windowBackground">@drawable/splashscreen</item>
     </style>

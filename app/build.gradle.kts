@@ -67,6 +67,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation ("org.mariadb.jdbc:mariadb-java-client:3.1.0")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0")
+    implementation(libs.androidx.preference.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
