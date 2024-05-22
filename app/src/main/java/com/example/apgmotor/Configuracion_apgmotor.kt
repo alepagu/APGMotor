@@ -7,6 +7,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -56,6 +57,16 @@ class Configuracion_apgmotor : AppCompatActivity() {
         val btnplanificarFecha: Button = findViewById(R.id.btn_pfecha)
         btnplanificarFecha.setOnClickListener{
             val intent: Intent = Intent(this, planificarfecha_apgmotor:: class.java)
+            startActivity(intent)
+        }
+
+        //Función del botón cerrar sesión
+        val btnapgcierrasesion: Button = findViewById(R.id.btn_cerrarsesion)
+        btnapgcierrasesion.setOnClickListener{
+            //Generamos la aparición de un mensaje por la interfaz que indique lo que has confirmado.
+            Toast.makeText(this, "Has cerrado sesión.", Toast.LENGTH_SHORT).show()
+
+            val intent: Intent = Intent(this, Login_apgmotor:: class.java)
             startActivity(intent)
         }
 

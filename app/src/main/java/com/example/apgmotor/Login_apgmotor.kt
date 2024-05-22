@@ -2,21 +2,18 @@ package com.example.apgmotor
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 
-class Login_apgmotor : ComponentActivity(), BaseDatos_apgmotor.OnResultadoConexionListener {
-
-    //Aseguro que se pueda realizar uso de la base de datos
-    private lateinit var apg_ConexionDB: BaseDatos_apgmotor
-
+class Login_apgmotor : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // Inicializar la conexión
-        apg_ConexionDB = BaseDatos_apgmotor(this)
+        //apg_ConexionDB = BaseDatos_apgmotor(this)
         // Realizar la conexión
-        apg_ConexionDB.apgRealizaConexion()
+        //apg_ConexionDB.apgRealizaConexion()
         //Pantalla con logo de aplicación
         Thread.sleep(2000)
         setTheme(R.style.AppTheme)
@@ -26,39 +23,34 @@ class Login_apgmotor : ComponentActivity(), BaseDatos_apgmotor.OnResultadoConexi
         enableEdgeToEdge() //Se ajusta a las dimensiones del telefóno
         setContentView(R.layout.login_apgmotor)
 
+        //Añadir acceso a la aplicación con credenciales estáticas
+        val accesoUsuario_apg = findViewById<EditText>(R.id.introducecorreo)
+        val contrasennaUsuario_apg = findViewById<EditText>(R.id.introducecontrasenna)
+        // Busca el botón de iniciar sesión por su id
+        val btniniciar: Button = findViewById(R.id.bt_login)
+
+        // Se crean las acciones para el acceso
+        btniniciar.setOnClickListener {
+            val usuario_apg = accesoUsuario_apg.text.toString()
+            val contrasenna_apg = contrasennaUsuario_apg.text.toString()
+            //Credenciales para la apk y uso de administrador
+            if (usuario_apg == "padilla.guale22@cordoba.salesianos.edu" && contrasenna_apg == "padilla24") {
+                // Accedemos con los datos y te dirige a la app
+                val intent = Intent(this, paginaprincipal_apgmotor::class.java)
+                // Inicia la actividad especificada por el Intent
+                startActivity(intent)
+                finish()
+            } else {
+                //Generamos la aparición de un mensaje por la interfaz que indique el error
+                Toast.makeText(this, "El correo o la contraseña son incorrectos, inténtelo de nuevo", Toast.LENGTH_SHORT).show()
+            }
+        }
+
         //Añadir funcionalidad al botón de Regístrate
         val btnRegistrarse: Button = findViewById(R.id.bt_registrate)
         btnRegistrarse.setOnClickListener{
-            val intent: Intent = Intent(this, Registro:: class.java)
+            val intent: Intent = Intent(this, Registro_apgmotor:: class.java)
             startActivity(intent)
         }
-
-        //Añadir funcionalidad al botón de Iniciar Sesión
-        val btnlogin: Button = findViewById(R.id.bt_login)
-        btnlogin.setOnClickListener{
-            val intent: Intent = Intent(this, paginaprincipal_apgmotor:: class.java)
-            startActivity(intent)
-        }
-
-    }
-
-    /**
-     * Si se realiza la conexión el método de la interfaz, realizará el lanzamiento
-     * del mensaje implementado
-     */
-    override fun apgRealizaConexion() {
-        TODO("Not yet implemented")
-        // Manejar el caso de conexión exitosa
-        Log.d("APG_BD", "Conexión exitosa")
-    }
-
-    /**
-     * Si la conexión resulta fallida el metodo de la interfaz, lanzara el mensaje de error
-     * y su respctivo fallo
-     */
-    override fun apgSinConexion(apg_error: String) {
-        TODO("Not yet implemented")
-        // Manejar el caso de error de conexión
-        Log.e("APG_BD", "Error de conexión: $apg_error")
     }
 }
