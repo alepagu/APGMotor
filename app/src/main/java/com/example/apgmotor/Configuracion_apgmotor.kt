@@ -39,7 +39,7 @@ class Configuracion_apgmotor : AppCompatActivity() {
        //Añadir lista de compornentes al Desplegable de esta pantalla
         val apg_desplegableTemas: Spinner = findViewById(R.id.desplegabletemas)
 
-        val apg_opciones = arrayOf("Tema por Defecto", "Tema Claro", "Tema Oscuro")
+        val apg_opciones = arrayOf("Seleccione un Tema", "Tema por Defecto", "Tema Claro", "Tema Oscuro")
 
         // Adaptador para que el desplegable recoja los valores
         val apg_adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, apg_opciones)

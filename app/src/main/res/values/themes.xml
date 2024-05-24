@@ -19,6 +19,11 @@
         <item name="colorPrimary">@color/primario</item>
         <item name="colorSecondary">@color/secundario</item>
         <item name="colorAccent">@color/black</item>
+
+        <!-- Anular el texto APGMotor de la parte superior -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
     </style>
 
     <!-- Pantalla de craga de la app -->

@@ -1,3 +1,4 @@
+import org.gradle.internal.impldep.bsh.commands.dir
 import kotlin.script.experimental.jvm.util.KotlinJars.stdlib
 
 plugins {
@@ -65,9 +66,11 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
-    implementation ("org.mariadb.jdbc:mariadb-java-client:3.1.0")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0")
     implementation(libs.androidx.preference.ktx)
+    //implementation(files("libs\\mariadb-java-client-3.4.0.jar"))
+    implementation ("com.jakewharton.threetenabp:threetenabp:1.3.1")
+    implementation(files("libs\\mysql-connector-j-8.2.0.jar"))
+    //implementation(files("libs\\mariadb-java-client-3.3.3.jar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -75,5 +78,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation(kotlin("script-runtime"))
 }

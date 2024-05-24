@@ -11,6 +11,11 @@
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_adaptadortestigos_apgmotor.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml">
         <config>
           <theme>@style/AppTheme</theme>
@@ -51,6 +56,21 @@
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_vertestigos_apgmotor.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_vistaimagen_apg.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/elementotestigos_apgmotor.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/login_apgmotor.xml">
         <config>
           <theme>@style/AppTheme</theme>
@@ -72,16 +92,46 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="El commit es de guardado, para controlar la versión actual (estable y con mantenimiento).&#10;Además incluye mensajer de error, de información y funcionamiento entre todas las ventanas actuales.">
+    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="El commit es de guardado, para controlar la versión actual (estable y con mantenimiento).&#10;Además incluye un nuevo desplegable y cambios de funcionamiento en zonas concretas de Configuracion">
+      <change afterPath="$PROJECT_DIR$/.idea/render.experimental.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/AdaptadorTestigos_apgmotor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Vertestigos_apgmotor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/abs_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/aceiteamarillo_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/aceiterojo_apgmotor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/airbag_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bateria_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bombilla_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/cinturon_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/frenomano_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/gases_apgmotor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pinchazo_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/puerta_apgmotor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/velcrucero_apgmotor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vertestigos_apgmotor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/elementotestigos_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/BaseDatos_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/BaseDatos_apgmotor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Configuracion_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Configuracion_apgmotor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Login_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Login_apgmotor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/ingresargastos_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/ingresargastos_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresargastos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresargastos_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/paginaprincipal_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/paginaprincipal_apgmotor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,13 +198,36 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.2135525093">
+      <recent name="com.example.apgmotor" />
+    </key>
+    <key name="android.template.749889776">
+      <recent name="com.example.apgmotor" />
+    </key>
+    <key name="android.template.1272480559">
+      <recent name="com.example.apgmotor" />
+    </key>
+    <key name="android.template.-205195266">
+      <recent name="com.example.apgmotor" />
+    </key>
+    <key name="android.template.547387039">
+      <recent name="com.example.apgmotor" />
+    </key>
+    <key name="android.template.-206661314">
+      <recent name="com.example.apgmotor" />
+    </key>
+    <key name="android.template.1491037552">
+      <recent name="com.example.apgmotor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\res\drawable" />
+      <recent name="C:\Users\aleja\Documents\APGMotor\app\libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\res\drawable" />
+      <recent name="C:\Users\aleja\Documents\APGMotor\app\libs" />
       <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\java\com\example\apgmotor" />
       <recent name="C:\Users\aleja\Documents\APGMotor\app" />
-      <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\res\drawable" />
       <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\res\mipmap-hdpi" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -166,22 +239,7 @@
     <key name="android.template.-1887470136">
       <recent name="com.example.apgmotor" />
     </key>
-    <key name="android.template.749889776">
-      <recent name="com.example.apgmotor" />
-    </key>
-    <key name="android.template.1272480559">
-      <recent name="com.example.apgmotor" />
-    </key>
     <key name="android.template.-307807481">
-      <recent name="com.example.apgmotor" />
-    </key>
-    <key name="android.template.547387039">
-      <recent name="com.example.apgmotor" />
-    </key>
-    <key name="android.template.-206661314">
-      <recent name="com.example.apgmotor" />
-    </key>
-    <key name="android.template.1491037552">
       <recent name="com.example.apgmotor" />
     </key>
   </component>
@@ -449,6 +507,10 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mariadb-java-client-3.3.3.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/app/libs/mariadb-java-client-3.3.3.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="scratch.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="APGMotor" />
       <option name="filePath" value="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/scratch.kts" />
@@ -594,7 +656,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716378387556</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="El commit es de guardado, para controlar la versión actual (estable y con mantenimiento).&#10;Además incluye un nuevo desplegable y cambios de funcionamiento en zonas concretas de Configuracion">
+      <option name="closed" value="true" />
+      <created>1716400522500</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716400522500</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -620,6 +690,7 @@
     <MESSAGE value="The commit includes DropDownMenu(Spinner) list and new activity created." />
     <MESSAGE value="El commit es de guardado, para todo lo que llevo incluyendo funcionamiento de todos los botones, comentarios, y algunas funciones que revisar." />
     <MESSAGE value="El commit es de guardado, para controlar la versión actual (estable y con mantenimiento).&#10;Además incluye mensajer de error, de información y funcionamiento entre todas las ventanas actuales." />
-    <option name="LAST_COMMIT_MESSAGE" value="El commit es de guardado, para controlar la versión actual (estable y con mantenimiento).&#10;Además incluye mensajer de error, de información y funcionamiento entre todas las ventanas actuales." />
+    <MESSAGE value="El commit es de guardado, para controlar la versión actual (estable y con mantenimiento).&#10;Además incluye un nuevo desplegable y cambios de funcionamiento en zonas concretas de Configuracion" />
+    <option name="LAST_COMMIT_MESSAGE" value="El commit es de guardado, para controlar la versión actual (estable y con mantenimiento).&#10;Además incluye un nuevo desplegable y cambios de funcionamiento en zonas concretas de Configuracion" />
   </component>
 </project>

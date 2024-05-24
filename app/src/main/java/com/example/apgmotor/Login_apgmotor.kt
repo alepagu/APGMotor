@@ -2,24 +2,33 @@ package com.example.apgmotor
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
-
+import com.jakewharton.threetenabp.AndroidThreeTen
 class Login_apgmotor : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Inicializar la conexión
-        //apg_ConexionDB = BaseDatos_apgmotor(this)
-        // Realizar la conexión
-        //apg_ConexionDB.apgRealizaConexion()
-        //Pantalla con logo de aplicación
+        // Instanciar la conexión
+        var conectate_apg = BaseDatos_apgmotor()
+        val conexion = conectate_apg.ConexionDB_apgmotor()
+
+        if (conexion != null) {
+            Log.i("Info", "Conexión establecida")
+            // Aquí puedes realizar operaciones con la base de datos
+        } else {
+            Log.e("Error", "No se pudo establecer la conexión")
+        }
+
         Thread.sleep(2000)
         setTheme(R.style.AppTheme)
 
         //Preparación de la aplicación
         super.onCreate(savedInstanceState)
+        //Actualizar permisos para la conexión de Base de Datos con plugins Java 8 (Android Oreo)
+        AndroidThreeTen.init(this)
         enableEdgeToEdge() //Se ajusta a las dimensiones del telefóno
         setContentView(R.layout.login_apgmotor)
 

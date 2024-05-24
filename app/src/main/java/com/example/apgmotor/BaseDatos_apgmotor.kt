@@ -1,55 +1,57 @@
 package com.example.apgmotor
 
-import android.os.AsyncTask
+import android.os.StrictMode
+import android.util.Log
+//import org.mariadb.jdbc.Connection
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.SQLException
 
-/**
- * Esta clase recoge una interfaz, que genera avisos de conexión y fallos.
- * Además, tiene una función que recoge todos los datos de la conexión y
- * una subclase privada que realiza la conexión con control de excepciones.
- */
-class BaseDatos_apgmotor(private val listener: OnResultadoConexionListener) {
+class BaseDatos_apgmotor {
+        //Constantes para la conexión de la base de datos
+//        private val urlBdAPG = "jdbc:mariadb://alejandroapp.duckdns.org:3310/apg_motor"
 
-    interface OnResultadoConexionListener {
-        fun apgRealizaConexion()
-        fun apgSinConexion(apg_error: String)
-    }
+//        private val urlBdAPG = "jdbc:mysql://alejandroapp.duckdns.org:3310/apg_motor"
+//        private val usuarioAPG = "alejandro"
+//        private val contrasennaAPG = "545G8apeLOhm5Ddskq6Cd0irTzdyaO"
 
-    fun apgRealizaConexion() {
-        apgCrearConexion().execute()
-    }
+        private val urlBdAPG = "jdbc:mysql://:3306/apg_motor"
+        private val usuarioAPG = "alejandro"
+        private val contrasennaAPG = "padillaTFGguale24"
 
-    /**
-     * En la siguente clase interna, se crea una función que recoge los datos necesarios para
-     * conectarse a la base de datos y luego poder ser llamada y utiliza desde la aplicación.
-     */
-    inner class apgCrearConexion : AsyncTask<Void, Void, Void>() {
-        override fun doInBackground(vararg params: Void?): Void? {
-            try {
-                // Cargar el controlador JDBC de MariaDB
-                Class.forName("org.mariadb.jdbc.Driver")
-                // URL de conexión a la base de datos, usuario de acceso y contraseña de acceso
-                val apg_url = "jdbc:mariadb://alejandroapp.duckdns.org:3309/apg_motor"
-                val apg_usuario = "alejandro"
-                val apg_contrasenna = "545G8apeLOhm5Ddskq6Cd0irTzdyaO"
+        fun ConexionDB_apgmotor(): Connection? {
 
-                // Realizar la conexión
-                val apg_conexion: Connection = DriverManager.getConnection(apg_url, apg_usuario, apg_contrasenna)
-                // Comprobar que se conecta con éxito
-                listener.apgRealizaConexion()
-                // Cerrar la conexión
-                apg_conexion.close()
+                //Agregación de restricciones
+                val apg_rest = StrictMode.ThreadPolicy.Builder().permitAll().build()
+                StrictMode.setThreadPolicy(apg_rest)
 
-            } catch (e: ClassNotFoundException) { //Controlar excepción si la clase no funciona
-                e.printStackTrace()
-                listener.apgSinConexion("Error de clase: " + e.message)
-            } catch (e: SQLException) { //Controlar los fallos producidos con la base de datos
-                e.printStackTrace()
-                listener.apgSinConexion("Error de SQL: " + e.message)
-            }
-            return null
+                //Comenzamos con la conexion
+                var conexion_apg: Connection? = null //Sin conexión o conexión nula
+                val cadena_conexion_apg: String // Formato de conexión en cadena
+
+                //Manejamos posibles opciones de errores en la conexión
+                try{
+                        //Class.forName("org.mariadb.jdbc.Driver")
+                        Class.forName("com.mysql.cj.jdbc.Driver")
+                        cadena_conexion_apg = urlBdAPG + "\n" + usuarioAPG + "\n" + contrasennaAPG
+                        conexion_apg = DriverManager.getConnection(cadena_conexion_apg)
+
+                } catch (ex: SQLException){
+                        //Fallo de SQL
+                        ex.message?.let { Log.e("Error", it) }
+
+                }catch (exc: ClassNotFoundException){
+                        //Fallo de Funcionamiento de la clase
+                        exc.message?.let { Log.e("Error", it) }
+
+                }catch (e: Exception){
+                        //Fallo de cualquier otra excepcion
+                        e.message?.let { Log.e("Error", it) }
+                }
+
+                return  conexion_apg
         }
-    }
 }
+
+
+// https://mariadb.com/kb/es/acerca-de-mariadb-connectorj/

@@ -19,7 +19,7 @@ class ingresargastos_apgmotor : AppCompatActivity() {
         //Añadir lista de compornentes al Desplegable de esta pantalla
         val apg_desplegableCategoria: Spinner = findViewById(R.id.desplegableCategorias)
 
-        val apg_opcionesCategoria = arrayOf("Repostar Combustible", "Mantenimiento", "ITV", "Arreglo de Avería")
+        val apg_opcionesCategoria = arrayOf("Seleccione un gasto","Repostar Combustible", "Mantenimiento", "ITV", "Arreglo de Avería")
 
         // Adaptador para que el desplegable recoja los valores
         val apg_adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, apg_opcionesCategoria)
