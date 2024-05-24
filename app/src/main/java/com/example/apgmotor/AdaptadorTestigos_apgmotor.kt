@@ -10,7 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import java.util.Objects
 
-class AdaptadorTestigosApgmotor(private val actividadApg: Context, private val pantalla_apg: LayoutInflater ,private val testigoApg: List<String>, private val imagenesApg: Array<Int>) : BaseAdapter() {
+class AdaptadorTestigosApgmotor(private val actividadApg: Context, private val pantalla_apg: Int ,private val testigoApg: List<String>, private val imagenesApg: Array<Int>) : BaseAdapter() {
     /**
      * El metodo obtiene la cuenta de los elementos que se van a necesitar
      */

@@ -8,14 +8,19 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import com.example.apgmotor.BBDDApgMotor.BaseDeDatos_apgmotor
+import com.example.apgmotor.BBDDApgMotor.Consultas_apgmotor
 import com.jakewharton.threetenabp.AndroidThreeTen
+import java.sql.Connection
+
 class Login_apgmotor : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // Instanciar la conexión
-        var conectate_apg = BaseDatos_apgmotor()
-        val conexion = conectate_apg.ConexionDB_apgmotor()
+        val conection: Connection? = null
 
-        if (conexion != null) {
+        val consultas = Consultas_apgmotor(conection)
+
+        if (consultas.conexion != null) {
             Log.i("Info", "Conexión establecida")
             // Aquí puedes realizar operaciones con la base de datos
         } else {
