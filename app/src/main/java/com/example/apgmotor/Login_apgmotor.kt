@@ -8,32 +8,17 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
-import com.example.apgmotor.BBDDApgMotor.BaseDeDatos_apgmotor
-import com.example.apgmotor.BBDDApgMotor.Consultas_apgmotor
-import com.jakewharton.threetenabp.AndroidThreeTen
 import java.sql.Connection
+import java.sql.Statement
 
 class Login_apgmotor : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Instanciar la conexión
-        val conection: Connection? = null
-
-        val consultas = Consultas_apgmotor(conection)
-
-        if (consultas.conexion != null) {
-            Log.i("Info", "Conexión establecida")
-            // Aquí puedes realizar operaciones con la base de datos
-        } else {
-            Log.e("Error", "No se pudo establecer la conexión")
-        }
 
         Thread.sleep(2000)
         setTheme(R.style.AppTheme)
 
         //Preparación de la aplicación
         super.onCreate(savedInstanceState)
-        //Actualizar permisos para la conexión de Base de Datos con plugins Java 8 (Android Oreo)
-        AndroidThreeTen.init(this)
         enableEdgeToEdge() //Se ajusta a las dimensiones del telefóno
         setContentView(R.layout.login_apgmotor)
 
@@ -66,5 +51,22 @@ class Login_apgmotor : ComponentActivity() {
             val intent: Intent = Intent(this, Registro_apgmotor:: class.java)
             startActivity(intent)
         }
+
+//        //Crea conexión
+//        val conexion: Connection? = BaseDatos_apgmotor().ConexionDB_apgmotor()
+//
+//        val consulta: Statement? = conexion?.createStatement()
+//        val resultSet = consulta?.executeQuery("SELECT * FROM marcas")
+//
+//        if (resultSet != null) {
+//            while (resultSet.next()){
+//                println(resultSet.getString("marca"))
+//            }
+//        }
+//
+//        resultSet?.close()
+//        consulta?.close()
+//        conexion?.close()
+
     }
 }

@@ -5,15 +5,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class Vertestigos_apgmotor : AppCompatActivity() {
-//Constantes para el intercambio de ventanas
-    companion object {
-        const val EXTRA_IMAGEN = "extra_imagen"
-        const val EXTRA_DESCRIPCION = "extra_descripcion"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -56,10 +52,11 @@ class Vertestigos_apgmotor : AppCompatActivity() {
         setContentView(R.layout.activity_vertestigos_apgmotor)
 
         //Creamos la lista con un estado mutable para poder ser modificado en futuras versiones
-        val testigos_apg = mutableListOf("Sin presión de aceite", "Fallo en el Circuito de Refrigeración",
+        val testigos_apg = mutableListOf("Sin presión de aceite", "Nivel de aceite bajo", "Fallo en el Circuito de Refrigeración",
             "Fallo de alternador o batería", "Freno de mano puesto", "Puerta abierta", "Airbag desactivado",
             "Cinturón desabrochado", "Fallo en el ABS", "Anomalía en el circuito de gases de escape",
             "Presión de neumaticos baja o rueda pinchada", "Bombilla Fundida", "Velocidad crucero activada")
+
         //asignar la pantalla que necesitamos ver
         val listaTestigos_apg = findViewById<ListView>(R.id.listaTestigos)
         //Asignarle los valores correctos a la pantalla
@@ -71,7 +68,7 @@ class Vertestigos_apgmotor : AppCompatActivity() {
 
         listaTestigos_apg.setOnItemClickListener { parent_apg, view_apg, posicion_apg, id ->
             //Creo la asignación de valores del elemento seleccionado
-
+            Toast.makeText(this, "Has seleccionado: $listaTestigos_apg", Toast.LENGTH_SHORT).show()
         }
     }
 }
