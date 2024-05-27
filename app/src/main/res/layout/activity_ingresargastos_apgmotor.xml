@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/kilometraje"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4D086"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.257" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/importe"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -62,11 +62,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/importe"
         app:layout_constraintVertical_bias="0.036" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/txtkm"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -91,11 +91,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+        app:layout_constraintTop_toBottomOf="@+id/txtkm"
         app:layout_constraintVertical_bias="0.051" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/descripcion"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -121,7 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion"
         app:layout_constraintVertical_bias="0.085" />
 
     <TextView

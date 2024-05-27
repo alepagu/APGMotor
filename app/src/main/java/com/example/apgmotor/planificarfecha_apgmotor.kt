@@ -17,11 +17,15 @@ class planificarfecha_apgmotor : AppCompatActivity() {
 
         //Funcionalidad del botón
         val btnguardarFecha: Button = findViewById(R.id.btn_guardarfecha)
-        btnguardarFecha.setOnClickListener{
+        btnguardarFecha.setOnClickListener {
             //Generamos la aparición de un mensaje informativo por la interfaz
-            Toast.makeText(this, "El día seleccionado recibirá un mensaje a las 00:00. Has sido redirigido a página principal.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                this,
+                "El día seleccionado recibirá un mensaje a las 00:00. Has sido redirigido a página principal.",
+                Toast.LENGTH_SHORT
+            ).show()
 
-            val intent: Intent = Intent(this, paginaprincipal_apgmotor:: class.java)
+            val intent: Intent = Intent(this, paginaprincipal_apgmotor::class.java)
             startActivity(intent)
         }
         //MVC, ciclo de la vida de la app

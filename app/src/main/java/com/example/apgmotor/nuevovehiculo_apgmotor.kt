@@ -20,8 +20,37 @@ class nuevovehiculo_apgmotor : AppCompatActivity() {
         //Añadir funcionalidad al botón de Iniciar Sesión
         val btnannadir: Button = findViewById(R.id.btn_add)
         btnannadir.setOnClickListener{
-            //Generamos la aparición de un mensaje informativo por la interfaz
-            Toast.makeText(this, "El vehículo ha sido registrado, puede introducir ya sus gastos.", Toast.LENGTH_SHORT).show()
+            //Comprobamos que los campos no sean nulos
+            val marca_apg = R.id.marcas
+            val modelo_apg = R.id.modelos
+            val kilometraje_apg = R.id.kilometraje
+            val matricula_apg = R.id.matricula
+
+            //Igualamos los campos para comprobar que no sea nulo
+            val campos = marca_apg + modelo_apg + kilometraje_apg + matricula_apg
+
+            if (campos!=null){
+                //Creamos la Select para comprobar datos y los insertamos a la tabla correspondiente
+                val consulta_apg = "INSERT INTO vehiculo_usuario (matricula, id_usuario) \n" +
+                        "SELECT 'matricula_a_insertar', id_usuario FROM usuarios WHERE id_usuario = 'id_del_usuario'"
+
+                val apiPersonal_url = "https://api.alejandroapp.duckdns.org/query?user=alejandro&passwd=545G8apeLOhm5Ddskq6Cd0irTzdyaO&query="
+
+                //Remplazamos espacios por el valor que pide la api
+                consulta_apg.replace(" ", "%20", false)
+
+                var lanzaConsulta_apg = (apiPersonal_url + consulta_apg)
+                lanzaConsulta_apg
+
+                //Generamos la aparición de un mensaje informativo por la interfaz
+                Toast.makeText(this, "El vehículo ha sido registrado, puede introducir ya sus gastos.", Toast.LENGTH_SHORT).show()
+
+            }
+            else{
+                //Generamos la aparición de un mensaje informativo por la interfaz
+                Toast.makeText(this, "El vehículo no ha sido registrado, espere unos minutos y vuelve a probar.", Toast.LENGTH_SHORT).show()
+
+            }
 
             val intent: Intent = Intent(this, paginaprincipal_apgmotor:: class.java)
             startActivity(intent)

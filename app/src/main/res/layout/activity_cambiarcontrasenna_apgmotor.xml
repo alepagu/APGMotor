@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/kilometraje"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4D086"
@@ -61,11 +61,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/contraActual"
         app:layout_constraintVertical_bias="0.034" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/newContra"
         android:layout_width="320dp"
         android:layout_height="46dp"
         android:ems="10"
@@ -89,11 +89,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/newContra"
         app:layout_constraintVertical_bias="0.075" />
 
     <EditText
-        android:id="@+id/editTextTextPassword4"
+        android:id="@+id/newContra1"
         android:layout_width="329dp"
         android:layout_height="46dp"
         android:ems="10"
@@ -117,11 +117,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword4"
+        app:layout_constraintTop_toBottomOf="@+id/newContra1"
         app:layout_constraintVertical_bias="0.158" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/contraActual"
         android:layout_width="320dp"
         android:layout_height="46dp"
         android:ems="10"
