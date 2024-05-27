@@ -82,15 +82,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="El commit es de guardado y actualización con la versión definitiva sin conexión con la base de datos.">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/APIPersonal_apgmotor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/apgmotor/PruebasIntegración_apgmotor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/apgmotor/PruebasUnitarias_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" afterDir="false" />
+    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="Commit Final para la entrega del TFG para su revisión del día 27. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código">
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -102,24 +95,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/apgmotor/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Cambiarcontrasenna_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Cambiarcontrasenna_apgmotor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Login_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Login_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Registro_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Registro_apgmotor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/ingresargastos_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/ingresargastos_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/nuevovehiculo_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/nuevovehiculo_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/planificarfecha_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/planificarfecha_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresargastos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresargastos_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_nuevovehiculo_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_nuevovehiculo_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_paginaprincipal_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_paginaprincipal_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_planificarfecha_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_planificarfecha_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_preguntasfrecuentes_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_preguntasfrecuentes_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_vergastos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vergastos_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_vertestigos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vertestigos_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/registro_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/registro_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/apgmotor/PruebasIntegración_apgmotor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/apgmotor/PruebasUnitarias_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/apgmotor/PruebasUnitarias_apgmotor.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,73 +293,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainActivity" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
-      <module name="APGMotor.app.main" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
-      <option name="CLEAR_APP_STORAGE" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="specific_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Hybrid>
-      <Java>
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Java>
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.example.apgmotor.Login_apgmotor" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="APGMotor.app.main" />
       <option name="DEPLOY" value="true" />
@@ -520,17 +432,41 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="PruebasUnitarias_apgmotor.Login_apgmotor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.example.apgmotor.PruebasUnitarias_apgmotor.Login_apgmotor&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="mariadb-java-client-3.3.3.jar" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/app/libs/mariadb-java-client-3.3.3.jar" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PruebasUnitarias_apgmotor.Login_apgmotor" />
+        <item itemvalue="Gradle.PruebasUnitarias_apgmotor" />
         <item itemvalue="Gradle.PruebasIntegración_apgmotor.InicioUsusario" />
         <item itemvalue="Gradle.PruebasIntegración_apgmotor" />
-        <item itemvalue="Gradle.PruebasUnitarias_apgmotor" />
         <item itemvalue="Android App.Configuracion_apgmotor" />
-        <item itemvalue="Android App.MainActivity" />
       </list>
     </recent_temporary>
   </component>
@@ -695,7 +631,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716653764741</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Commit Final para la entrega del TFG para su revisión del día 27. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código">
+      <option name="closed" value="true" />
+      <created>1716804808560</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716804808560</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -726,6 +670,7 @@
     <MESSAGE value="El commit es de guardado y actualización" />
     <MESSAGE value="El commit es de guardado y actualización y prueba de conexión sin éxito con la BBDD" />
     <MESSAGE value="El commit es de guardado y actualización con la versión definitiva sin conexión con la base de datos." />
-    <option name="LAST_COMMIT_MESSAGE" value="El commit es de guardado y actualización con la versión definitiva sin conexión con la base de datos." />
+    <MESSAGE value="Commit Final para la entrega del TFG para su revisión del día 27. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Final para la entrega del TFG para su revisión del día 27. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
   </component>
 </project>

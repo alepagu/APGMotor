@@ -62,7 +62,7 @@ class ingresargastos_apgmotor : AppCompatActivity() {
         //Añadir funcionalidad al botón de Añadir Gastos
         val btngastos: Button = findViewById(R.id.btn_agregar)
         btngastos.setOnClickListener{
-            Toast.makeText(this, "Se ha guardado el fallo con éxito", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Se ha guardado el gasto con éxito", Toast.LENGTH_SHORT).show()
             val intent: Intent = Intent(this, paginaprincipal_apgmotor:: class.java)
             startActivity(intent)
         }

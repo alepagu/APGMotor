@@ -39,11 +39,12 @@ class Login_apgmotor : ComponentActivity() {
             var cambio = consulta_apg.replace(" ", "%20", false)
 
             //lanzamos la consulta con la api
-            val lanzaConsulta_apg = (apiPersonal_url + cambio)
+            //val lanzaConsulta_apg = (apiPersonal_url + cambio)
+            lanzarConsulta(correo_apg, contrasenna_apg)
 
             //Comparar datos diferentes de valor nulo
             if (correo_apg != null && contrasenna_apg != null){
-                lanzaConsulta_apg
+                //lanzaConsulta_apg
                 val intent: Intent = Intent(this, paginaprincipal_apgmotor::class.java)
                 startActivity(intent)
 
@@ -64,4 +65,11 @@ class Login_apgmotor : ComponentActivity() {
             }
 
         }
+
+    fun lanzarConsulta(correo: Int, contrasenna: Int): String {
+        val api_apgmotor = "https://api.alejandroapp.duckdns.org/query?user=alejandro&passwd=545G8apeLOhm5Ddskq6Cd0irTzdyaO&query="
+        val consulta_apg = "SELECT * FROM usuarios WHERE correo = $correo AND contrasenna = $contrasenna"
+        val lanzaConsulta_apg = (api_apgmotor + consulta_apg.replace(" ", "%20"))
+        return lanzaConsulta_apg
+    }
 }
