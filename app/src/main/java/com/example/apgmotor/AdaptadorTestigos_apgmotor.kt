@@ -8,6 +8,10 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
+/**
+ * En kotlin, el constructor se declara en la misma clase. Los métodos que se utilizan es para
+ * dar el formato adecuado con valores hacia una lista en la clase que se necesite.
+ */
 class AdaptadorTestigosApgmotor(private val actividadApg: Context, private val pantalla_apg: Int ,private val testigoApg: List<String>, private val imagenesApg: Array<Int>) : BaseAdapter() {
     /**
      * El metodo obtiene la cuenta de los elementos que se van a necesitar

@@ -47,12 +47,12 @@ class Login_apgmotor : ComponentActivity() {
                 //lanzaConsulta_apg
                 val intent: Intent = Intent(this, paginaprincipal_apgmotor::class.java)
                 startActivity(intent)
-
+                //Mensaje indicativo
                 Toast.makeText(this, "Entrando a la aplicación con el usuario introducido", Toast.LENGTH_SHORT).show()
             }
             else{
+                //Mensaje de error
                 Toast.makeText(this, "Algún dato introducido es incorrecto", Toast.LENGTH_SHORT).show()
-
             }
 
         }
@@ -60,16 +60,25 @@ class Login_apgmotor : ComponentActivity() {
             //Añadir funcionalidad al botón de Regístrate
             val btnRegistrarse: Button = findViewById(R.id.bt_registrate)
             btnRegistrarse.setOnClickListener {
+                //Cambiamos de ventana
                 val intent: Intent = Intent(this, Registro_apgmotor::class.java)
                 startActivity(intent)
             }
 
         }
 
+    /**
+     * En esta función se crea la consulta y se pasa mediante la url a la web que contiene
+     * la API de Python y cmoprobamos los datos
+     */
     fun lanzarConsulta(correo: Int, contrasenna: Int): String {
+        //URL de API personal
         val api_apgmotor = "https://api.alejandroapp.duckdns.org/query?user=alejandro&passwd=545G8apeLOhm5Ddskq6Cd0irTzdyaO&query="
+        //Consulta con los datos
         val consulta_apg = "SELECT * FROM usuarios WHERE correo = $correo AND contrasenna = $contrasenna"
+        //Adaptación de la url
         val lanzaConsulta_apg = (api_apgmotor + consulta_apg.replace(" ", "%20"))
+        //Devolvemos el valor que recibimos en la consulta
         return lanzaConsulta_apg
     }
 }

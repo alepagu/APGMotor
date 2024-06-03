@@ -4,17 +4,19 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import java.sql.Connection
-import java.sql.Statement
 
 class paginaprincipal_apgmotor : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge() //Se ajusta a las dimensiones del telefóno
         setContentView(R.layout.activity_paginaprincipal_apgmotor)
+
+        /**
+         * La declaración de los botones, se comentan de forma rápida ya que en la
+         * ventana del login han sido explicados con más detalle y es el mismo procedimiento.
+         */
 
         //Añadir funcionalidad al clicar las imágenes
         val imagenGolf: ImageButton = findViewById(R.id.golfito)

@@ -14,6 +14,7 @@ class vergastos_apgmotor : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        //Llamamos a la ventana XML
         setContentView(R.layout.activity_vergastos_apgmotor)
 
     }
