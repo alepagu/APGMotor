@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Indicamos que la interfaz va a seguir una estructura no lineal.
+ Dentro nos encontramos todos los elementos módulados en sus respectivas etiquetas-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +9,7 @@
     android:layout_height="match_parent"
     android:background="#F4D086"
     tools:context=".Cambiarcontrasenna_apgmotor">
-
+    <!-- Campo de texto que se usa en la indicación de la página que nos encontramos -->
     <TextView
         android:id="@+id/textView11"
         android:layout_width="339dp"
@@ -21,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.151" />
-
+    <!-- Los textos que siguen indican los elementos que se requieren -->
     <TextView
         android:id="@+id/textView9"
         android:layout_width="419dp"
@@ -63,7 +65,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contraActual"
         app:layout_constraintVertical_bias="0.034" />
-
+    <!-- Campo de recogida de texto para la nueva contraseña -->
     <EditText
         android:id="@+id/newContra"
         android:layout_width="320dp"
@@ -78,7 +80,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
         app:layout_constraintVertical_bias="0.047" />
-
+    <!-- Campo de recogida de texto para la nueva contraseña -->
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
@@ -106,7 +108,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:layout_constraintVertical_bias="0.094" />
-
+    <!-- Botón para realizar las comprobaciónes desde el lenguaje kotlin -->
     <Button
         android:id="@+id/btn_cambiacontra"
         android:layout_width="321dp"
@@ -121,7 +123,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newContra1"
         app:layout_constraintVertical_bias="0.158" />
-
+    <!-- Campo de recogida de texto para la contraseña que tiene el usuario -->
     <EditText
         android:id="@+id/contraActual"
         android:layout_width="320dp"
@@ -136,5 +138,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         app:layout_constraintVertical_bias="0.019" />
-
+    <!-- Cerramos lo que contiene la ventana para evitar fallos -->
 </androidx.constraintlayout.widget.ConstraintLayout>

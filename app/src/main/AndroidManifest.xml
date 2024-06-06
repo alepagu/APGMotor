@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?> <!-- Declaración de la versión y el lenguaje que se va a implementar -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <!-- Permisos para poder usar la base de datos con internet -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <!-- Describimos las reglas que sigue este programa, y personalizamos el tema -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,6 +16,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <!-- Se añaden todas las clases y actividades necesarias para el desarrollo de la aplicación APGMotor -->
         <activity
             android:name=".Fallostestigos_apgmotor"
             android:exported="false" />
@@ -52,6 +53,7 @@
         <activity
             android:name=".Registro_apgmotor"
             android:exported="false" />
+        <!-- Indicamos que ventana se nos muestra primero y le añadimos una ventana de carag a la aplicación -->
         <activity
             android:name=".Login_apgmotor"
             android:exported="true"

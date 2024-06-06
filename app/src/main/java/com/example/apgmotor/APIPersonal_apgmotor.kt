@@ -20,11 +20,14 @@ class APIPersonal_apgmotor {
      */
     @Throws(IOException::class)
     fun ejecutarConsulta(user: String, passwd: String, query: String): JSONObject? {
+        //URL con las variables de acceso
         val url_apg = "$baseUrl?user=$user&passwd=$passwd&query=$query"
+        //Se declara la construcción de la variable
         val respuesta_apg = Request.Builder()
             .url(url_apg)
             .build()
 
+        //Si es pasada y se obtiene respuesta, se obtienen los datos en formato JSON.
         client.newCall(respuesta_apg).execute().use { respuesta ->
             if (!respuesta.isSuccessful) throw IOException("Fallo en los manejos de los datos $respuesta")
 

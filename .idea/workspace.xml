@@ -66,11 +66,6 @@
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/pruebas.xml">
-        <config>
-          <theme>@style/AppTheme</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/registro_apgmotor.xml">
         <config>
           <theme>@style/AppTheme</theme>
@@ -82,13 +77,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="Commit Final para la entrega del TFG para su revisión del día 27. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/2c8051196856aa2653b71db4ca912bce6da6663f/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/2c8051196856aa2653b71db4ca912bce6da6663f/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/3cca6b8216156e733c899361e6c426b34ee8af8e/sources/org/gradle/accessors/dm/LibrariesForLibs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/3cca6b8216156e733c899361e6c426b34ee8af8e/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" beforeDir="false" />
+    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/ApgConectaBaseDatos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/apgmotor/ApgConectaBaseDatosTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/apgmotor/PruebasSistema_apgmotorTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/executionHistory.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -97,21 +90,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/AdaptadorTestigos_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/AdaptadorTestigos_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Login_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Login_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Registro_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Registro_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/paginaprincipal_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/paginaprincipal_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/vergastos_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/vergastos_apgmotor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/APIPersonal_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/APIPersonal_apgmotor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresargastos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresargastos_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_paginaprincipal_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_paginaprincipal_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_planificarfecha_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_planificarfecha_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_vergastos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vergastos_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/login_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/pruebas.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/registro_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/registro_apgmotor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/apgmotor/ExampleUnitTest.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,8 +117,8 @@
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -219,11 +203,11 @@
       <recent name="C:\Users\aleja\Documents\APGMotor\app\libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\java\com\example\apgmotor" />
+      <recent name="C:\Users\aleja\Documents\APGMotor\app\src\androidTest\java\com\example" />
       <recent name="C:\Users\aleja\Documents\APGMotor\app\libs" />
       <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\res\drawable" />
-      <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\java\com\example\apgmotor" />
       <recent name="C:\Users\aleja\Documents\APGMotor\app" />
-      <recent name="C:\Users\aleja\Documents\APGMotor\app\src\main\res\mipmap-hdpi" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.example.apgmotor" />
@@ -238,74 +222,7 @@
       <recent name="com.example.apgmotor" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app">
-    <configuration name="Configuracion_apgmotor" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
-      <module name="APGMotor.app.main" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
-      <option name="CLEAR_APP_STORAGE" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="specific_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Hybrid>
-      <Java>
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Java>
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.example.apgmotor.Configuracion_apgmotor" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.PruebasUnitarias_apgmotor.pruebaCapacidadRendimiento">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="APGMotor.app.main" />
       <option name="DEPLOY" value="true" />
@@ -373,7 +290,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PruebasIntegración_apgmotor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PruebasSistema_apgmotorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -386,7 +303,7 @@
           <list>
             <option value=":app:testDebugUnitTest" />
             <option value="--tests" />
-            <option value="&quot;com.example.apgmotor.PruebasIntegración_apgmotor&quot;" />
+            <option value="&quot;com.example.apgmotor.PruebasSistema_apgmotorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -397,7 +314,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PruebasIntegración_apgmotor.InicioUsusario" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PruebasSistema_apgmotorTest.pruebaCapacidadRendimiento" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -410,7 +327,7 @@
           <list>
             <option value=":app:testDebugUnitTest" />
             <option value="--tests" />
-            <option value="&quot;com.example.apgmotor.PruebasIntegración_apgmotor.InicioUsusario&quot;" />
+            <option value="&quot;com.example.apgmotor.PruebasSistema_apgmotorTest.pruebaCapacidadRendimiento&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -421,7 +338,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PruebasUnitarias_apgmotor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PruebasSistema_apgmotor.pruebaAceptacionIntegracion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -434,7 +351,7 @@
           <list>
             <option value=":app:testDebugUnitTest" />
             <option value="--tests" />
-            <option value="&quot;com.example.apgmotor.PruebasUnitarias_apgmotor&quot;" />
+            <option value="&quot;com.example.apgmotor.PruebasSistema_apgmotor.pruebaAceptacionIntegracion&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -445,7 +362,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PruebasUnitarias_apgmotor.Login_apgmotor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PruebasSistema_apgmotor.pruebaCapacidadRendimiento" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -458,7 +375,31 @@
           <list>
             <option value=":app:testDebugUnitTest" />
             <option value="--tests" />
-            <option value="&quot;com.example.apgmotor.PruebasUnitarias_apgmotor.Login_apgmotor&quot;" />
+            <option value="&quot;com.example.apgmotor.PruebasSistema_apgmotor.pruebaCapacidadRendimiento&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PruebasUnitarias_apgmotor.pruebaCapacidadRendimiento" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.example.apgmotor.PruebasUnitarias_apgmotor.pruebaCapacidadRendimiento&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -475,11 +416,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PruebasUnitarias_apgmotor.Login_apgmotor" />
-        <item itemvalue="Gradle.PruebasUnitarias_apgmotor" />
-        <item itemvalue="Gradle.PruebasIntegración_apgmotor.InicioUsusario" />
-        <item itemvalue="Gradle.PruebasIntegración_apgmotor" />
-        <item itemvalue="Android App.Configuracion_apgmotor" />
+        <item itemvalue="Gradle.PruebasUnitarias_apgmotor.pruebaCapacidadRendimiento" />
+        <item itemvalue="Gradle.PruebasSistema_apgmotorTest.pruebaCapacidadRendimiento" />
+        <item itemvalue="Gradle.PruebasSistema_apgmotorTest" />
+        <item itemvalue="Gradle.PruebasSistema_apgmotor.pruebaCapacidadRendimiento" />
+        <item itemvalue="Gradle.PruebasSistema_apgmotor.pruebaAceptacionIntegracion" />
       </list>
     </recent_temporary>
   </component>
@@ -660,7 +601,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716821298387</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código">
+      <option name="closed" value="true" />
+      <created>1717442057389</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717442057389</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -692,6 +641,10 @@
     <MESSAGE value="El commit es de guardado y actualización y prueba de conexión sin éxito con la BBDD" />
     <MESSAGE value="El commit es de guardado y actualización con la versión definitiva sin conexión con la base de datos." />
     <MESSAGE value="Commit Final para la entrega del TFG para su revisión del día 27. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Final para la entrega del TFG para su revisión del día 27. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
+    <MESSAGE value="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/APGMotor$PruebasSistema_apgmotor_pruebaCapacidadRendimiento.ic" NAME="PruebasSistema_apgmotor.pruebaCapacidadRendimiento Coverage Results" MODIFIED="1717684818681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
