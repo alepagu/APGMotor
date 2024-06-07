@@ -56,7 +56,7 @@ class AdaptadorTestigosApgmotor(private val actividadApg: Context, private val p
         val imagenApg: ImageView = vistaApg.findViewById(R.id.ftTestigo)
         imagenApg.setImageResource(imagenesApg[position_apg])
 
-        //Devolvemos la pantalla que se crea
+        //Devolvemos la pantalla que se crea con los datos recibidos
         return vistaApg
     }
 }

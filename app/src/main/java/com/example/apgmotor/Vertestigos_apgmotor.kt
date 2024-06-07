@@ -9,10 +9,17 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * En esta clase se crea una lista para recoger las imágenes,
+ * también se crea una lista de descripciones (se utilizará en próximas versiones),
+ * otra lista más que recoge los nombres de los testigos, estos últimos serán utilizados junto a los imagenes.
+ * Más tarde se utilizará una clase de kotlin y se le añaderá los valores en orden establecido en el constructor.
+ * La clase que se utiliza es la clase llamada AdaptadorTestigos_apgmotor.
+ */
 class Vertestigos_apgmotor : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+            //LISTA DE IMÁGENES
         //Añadimos las imagenes en el orden que aparece la información
         val imagenes_apg: Array<Int>
         imagenes_apg = (
@@ -30,6 +37,7 @@ class Vertestigos_apgmotor : AppCompatActivity() {
                     R.drawable.bombilla_apgmotor,
                     R.drawable.velcrucero_apgmotor))
 
+            //LISTA DE DESCIPCIONES
         //Creo la lista con las descripciones que incorporan los testigos
         val descripcionesTestigos_apg = mutableListOf(
             "No hay el suficiente nivel de aceite para ser lubricado y no dañar componentes, esta avería impide el movimiento del vehículo. Su solución es añadir aceite y ver si se apaga el testigo y de lo contrario es una avería interna que depende de una reparación mecánica.",
@@ -46,27 +54,33 @@ class Vertestigos_apgmotor : AppCompatActivity() {
             "Si se le ha encendido este testigo ve revisando todas las luces de su vehículo y sustituye la que se encuntre fundida, en el caso de tener más de una ir a revisarlo por un experto ya que puede haber caídas de tensión que pueden empeorar.",
             "Si se está preocupando por este testigo, puede estar tranquilo. Su encendido se debe a que se ha activado una velocidad fija para ir sin necesidad de pisar el acelerador de su vehículo. Para apagarlo, debe de desactivar esa opción o pissar el freno levemente.")
 
-
+//PRECARAGA DE LA APLICACIÓN
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        //ASIGNACIÓN DE LA INTERFAZ DE XML PARA ESTA PANTALLA
         setContentView(R.layout.activity_vertestigos_apgmotor)
 
+        //LISTA CON EL NOMBRE DE LOS TESTIGOS
         //Creamos la lista con un estado mutable para poder ser modificado en futuras versiones
         val testigos_apg = mutableListOf("Sin presión de aceite", "Nivel de aceite bajo", "Fallo en el Circuito de Refrigeración",
             "Fallo de alternador o batería", "Freno de mano puesto", "Puerta abierta", "Airbag desactivado",
             "Cinturón desabrochado", "Fallo en el ABS", "Anomalía en el circuito de gases de escape",
             "Presión de neumaticos baja o rueda pinchada", "Bombilla Fundida", "Velocidad crucero activada")
 
-        //asignar la pantalla que necesitamos ver
+        //ASIGNACIÓN DE PANTALLA CON EL FORMATO A UTILIZAR
         val listaTestigos_apg = findViewById<ListView>(R.id.listaTestigos)
         //Asignarle los valores correctos a la pantalla
         //adaptador_apg = ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, testigos_apg)
 
-        //asignamos el adaptador personalizado en la clase AdaptadorRestigos_apgmotor
+        //SE IMPORTA LA CLASE CON EL ADAPTADOR
+        //se le asignan las listas en el orden correspondiente para que sean los datos sincronizados de forma correcta
         val adaptador_apg = AdaptadorTestigosApgmotor(this, R.layout.elementotestigos_apgmotor, testigos_apg, imagenes_apg)
         listaTestigos_apg.adapter = adaptador_apg
 
+        //SE IMPRIME EL ID POR PANTALLA DEL ELEMENTO SELECCIONADO
+        //Más tarde, se implementará un cambio a las ventana que contenga la descripción asociada a cada id del testigo
         listaTestigos_apg.setOnItemClickListener { parent_apg, view_apg, posicion_apg, id ->
+            /*IMPLEMENTAR FUTURA ACTUALIZACIÓN*/
             //Creo la asignación de valores del elemento seleccionado
             Toast.makeText(this, "Has seleccionado: $listaTestigos_apg", Toast.LENGTH_SHORT).show()
         }

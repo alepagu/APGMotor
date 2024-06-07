@@ -12,6 +12,10 @@ import java.sql.SQLException
  */
 class ApgConectaBaseDatos(){
 
+    /**
+     * Esta función, realiza uso de ficheros LOG internos para comprobar el funcionamiento
+     * correcto de la clase.
+     */
     fun getConnection(): Connection? {
         //USAMOS EL LOG
         Log.d("Informativo de conexión", "VAMOS A EMPEZAR EL PROCESO.")

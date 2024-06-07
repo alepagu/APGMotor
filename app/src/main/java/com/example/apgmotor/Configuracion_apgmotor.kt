@@ -12,59 +12,72 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * PEMITE REALIZAR MODIFICACIONES EN EL PERFIL DEL USUARIO, MIRAR AYUDAS Y
+ * CERRAR SESIÓN. SI ALGÚN USUARIO LO DESEA PUEDE PLANIFICAR UNA FECHA CON RECORDATORIO.
+ */
 class Configuracion_apgmotor : AppCompatActivity() {
+    //PREPARACIÓN DE PANTALLA
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Obtener las preferencias del usuario
+        // SE RECOGE EL VALOR POR DEFECTO DEL TEMA
         val apg_preferencias = PreferenceManager.getDefaultSharedPreferences(this)
         val apg_temas = apg_preferencias.getString("apg_temas", "Tema por Defecto")
 
-        // Establecer el tema según la preferencia del usuario
-        when (apg_temas) {
-            "Tema Claro" -> setTheme(R.style.AppTheme_Clarito)
-            "Tema Oscuro" -> setTheme(R.style.AppTheme_Oscurito)
-            else -> setTheme(R.style.AppTheme)
-        }
-
+//PRECARAGA FINALIZADA PARA EL CAMBIO DE LA CONTRASEÑA
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        //IMPLEMENTACIÓN DE LA INTERFAZ XML NECESARIA
         setContentView(R.layout.activity_configuracion_apgmotor)
 
-        //Añadir funcionalidad a los botones
+        /**
+         * LOS BOTONES DE ESTA CLASE NO SE HAN COMENTADO, DEBIDO A QUE HAN SIDO COMENTADOS EN EL
+         * RESTO DE LAS CLASES DE LA APLICACIÓN.
+         */
         val btnCambiarContrasenna: Button = findViewById(R.id.btn_cambcont)
         btnCambiarContrasenna.setOnClickListener{
+            //CAMBIO DE PANTALLA
             val intent: Intent = Intent(this, Cambiarcontrasenna_apgmotor:: class.java)
             startActivity(intent)
         }
 
-       //Añadir lista de compornentes al Desplegable de esta pantalla
+       //SE ASIGNA EL VALOR DEL DESPLEGABLE DEL XML
         val apg_desplegableTemas: Spinner = findViewById(R.id.desplegabletemas)
-
+//SE LE AÑADE LOS VALORES AL DESPLEGABLE
         val apg_opciones = arrayOf("Seleccione un Tema", "Tema por Defecto", "Tema Claro", "Tema Oscuro")
 
-        // Adaptador para que el desplegable recoja los valores
+        // SE UTILIZA EL ADAPATADOR QUE INTEGRA ANDROID STUDIO PARA EL USO DE ESTE COMPONENTE SPINNER (DESPEGABLE)
         val apg_adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, apg_opciones)
         apg_adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         apg_desplegableTemas.adapter = apg_adaptador
 
-        // Funcionalidad del desplegable según la selección obtenida
+        // SE AÑADE LA FUNCIONALIDAD AL DESPLEGABLE CREADO
         apg_desplegableTemas.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                //SE ASIGNA EL ARRAY CON LAS POSICIONES SEGÚN LAS OPCIONES
                 val opcionSeleccionada = apg_opciones[position]
-                // Cambiar el tema según la opción seleccionada por el usuario
-                //Para la versión del 27/05/2024 solo se cambia el color al usar el desplegable
+                //PARA UNA VERSIÓN FUTURA SE AÑADIRÁN LOS DISTINTOS CAMBIOS EN TODAS LAS VENTANAS
                 when (opcionSeleccionada) {
+                    /**
+                     * DE MOMENTO EN LA VERSIÓN DE PRUEBA PARA OBSERVAR FALLOS DE GAMAS DE COLORES,
+                     * SOLAMENTE SE HA CAMBIADO EL COLOR DENTRO DEL DEPLEGABLE
+                     */
                     "Tema por Defecto" -> setTheme(R.style.AppTheme)
                     "Tema Claro" -> setTheme(R.style.AppTheme_Clarito)
                     "Tema Oscuro" -> setTheme(R.style.AppTheme_Oscurito)
                 }
             }
-
+//SE HA DEJADO LA SIGUIENTE FUNCIÓN PARA ACTUALIZAR EL TEMA DE LA APLICACIÓN
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // Acción cuando no se ha seleccionado nada
+             //SI NO SE SELECCIONA NADA EL TEMA ES POR DEFECTO LOS COLORES DE LA APP
                 setTheme(R.style.AppTheme)
             }
         }
 
+        /**
+         * LOS BOTONES SIGUEN EL FORMATO UTILIZADO EN EL RESTO DE LA APLICACIÓN.
+         * PARA RESUMIR: ASIGNACIÓN DEL XML, Y FUNCIONAMIENTO MÁS CAMBIO DE VENTANAS
+         * AL SER PRESIONADO.
+         */
         //Indicamos al botón de Preguntas frecuentes donde se debe dirigir.
         val btnPreguntasFrecuentes: Button = findViewById(R.id.btn_faq)
         btnPreguntasFrecuentes.setOnClickListener{

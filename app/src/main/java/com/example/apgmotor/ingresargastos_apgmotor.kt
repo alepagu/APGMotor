@@ -11,6 +11,12 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * ESTA CLASE RECOGE TODOS LOS VALORES INTRODUCIDOS POR LOS CAMPOS ASIGNADOS DESDE EL XML,
+ * Y REALIZA UN INSERT EN LA TABALA GASTOS DE LA BASE DE DATOS.
+ * PARA PODER REALIZAR OPTIMIZACIÓN EN COMENTARIOS, SE HA COMENTADO SOLO LO RELEVANTE YA
+ * QUE SE UTILIZA EL MISMO FORMATO QUE EL RESTO DE LAS CLASES.
+ */
 class ingresargastos_apgmotor : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

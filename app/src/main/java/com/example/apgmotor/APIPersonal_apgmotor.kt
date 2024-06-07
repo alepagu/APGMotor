@@ -6,7 +6,11 @@ import org.json.JSONObject
 import java.io.IOException
 
 /**
- * En esta clase se preparan los métodos para lanzar las consultas definidas
+ * En esta clase se preparan los métodos para lanzar las consultas definidas,
+ * ha sido preparada para las versiones futuras de manera que permita facilitar
+ * la modulación del código.
+ * Solamente se tendrán que modificar los códigos y adaptar las consultas de forma global,
+ * así se obtendrá un acceso desde cualquier clase.
  */
 class APIPersonal_apgmotor {
     //Variables privadas para establecer el JSON para las consultas
