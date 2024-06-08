@@ -1,10 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
+    <!-- SE CREA EL TEXTO PARA ADAPTAR LA PANTALLA XML A LA INTERFAZ KOTLIN
+     PARA LA CREACIÓN DE UNA LISTA-->
     <TextView
         android:id="@+id/nombreTestigo"
         android:layout_width="249dp"
@@ -19,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.533" />
-
+    <!-- SE PREPARA LA IMAGEN PARA ADAPTARLA DESDE KOTLIN Y CONSEGUIR LA LISTA DESEADA -->
     <ImageView
         android:id="@+id/ftTestigo"
         android:layout_width="127dp"
@@ -31,5 +37,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.037"
         app:srcCompat="@drawable/aceiterojo_apgmotor" />
-
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>

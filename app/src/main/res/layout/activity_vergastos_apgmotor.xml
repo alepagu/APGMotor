@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +12,7 @@
     android:layout_height="match_parent"
     android:background="#F4D086"
     tools:context=".vergastos_apgmotor">
-
+    <!-- TEXTO INDICATIVO DE LA VENTANA EN LA QUE NOS ENCONTRAMOS -->
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
@@ -22,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.107" />
-
+    <!-- TEXTO INDICATIVO DE COMO SE MUESTRAN LOS GASTOS -->
     <TextView
         android:id="@+id/textView27"
         android:layout_width="371dp"
@@ -37,7 +42,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22"
         app:layout_constraintVertical_bias="0.496" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+                        PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/button"
         android:layout_width="365dp"
@@ -51,7 +57,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView27"
         app:layout_constraintVertical_bias="0.088" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+                        PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/button"
         android:layout_width="365dp"
@@ -65,5 +72,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.483" />
-
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>

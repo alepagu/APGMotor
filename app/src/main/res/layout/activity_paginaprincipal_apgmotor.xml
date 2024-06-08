@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +12,7 @@
     android:layout_height="match_parent"
     android:background="#F4D086"
     tools:context=".paginaprincipal_apgmotor">
-
+    <!-- SE INDICA EL TEXTO DE LA VENTANA QUE SE MUESTRA. -->
     <TextView
         android:id="@+id/pagina_text"
         android:layout_width="303dp"
@@ -21,7 +26,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.086" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+                    PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/btn_av"
         android:layout_width="276dp"
@@ -35,7 +41,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.791" />
-
+    <!-- SE ESTABLECE UN SCROLL QUE PERMITE CAMBIAR EL FORMATO DE CREACIÓN DE LA INTERFAZ
+    SOLAMENTE EN SU INTERIOR Y DE ESTO PERMITE CREAR UNA LISTA PARA DESDE KOTLIN CONSEGUIR
+    IMPLEMENTARLE LOS COMPONENTES NECESARIOS. -->
     <ScrollView
         android:layout_width="399dp"
         android:layout_height="442dp"
@@ -44,28 +52,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pagina_text"
         app:layout_constraintVertical_bias="0.32999998">
-
+        <!-- SE CAMBIA LA ESTRUCTURA DE LA INTERFAZ PARA QUE SEA DE COMPOSICIÓN LINEAR. -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
+            <!-- SE PREPARA EL CAMPO DE TEXTO PARA ADAPTARLO EN KOTLIN. -->
             <TextView
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="90sp" />
-
+            <!-- SE PREPARA EL CAMPO DE LA IMAGEN PARA ADAPTARLO EN KOTLIN. -->
             <ImageButton
                 android:id="@+id/golfito"
                 android:layout_width="match_parent"
                 android:layout_height="249dp"
                 app:srcCompat="@drawable/golfito" />
-
+            <!-- SE PREPARA EL CAMPO DE TEXTO PARA ADAPTARLO EN KOTLIN. -->
             <TextView
                 android:id="@+id/textView16a"
                 android:layout_width="match_parent"
                 android:layout_height="100sp" />
-
+            <!-- SE PREPARA EL CAMPO DE LA IMAGEN PARA ADAPTARLO EN KOTLIN. -->
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
@@ -73,7 +81,8 @@
                 app:srcCompat="@drawable/corsilla" />
         </LinearLayout>
     </ScrollView>
-
+    <!-- SE ESTABLECE UN BOTÓN CON IMAGEN PARA MÁS TARDE AÑADIRLE LA FUNCIONALIDAD
+             DESDE KOTLIN. -->
     <ImageButton
         android:id="@+id/btn_inicio"
         android:layout_width="wrap_content"
@@ -87,7 +96,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_av"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/inicio" />
-
+    <!-- SE ESTABLECE UN BOTÓN CON IMAGEN PARA MÁS TARDE AÑADIRLE LA FUNCIONALIDAD
+             DESDE KOTLIN. -->
     <ImageButton
         android:id="@+id/btn_vgastos"
         android:layout_width="95dp"
@@ -101,7 +111,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_av"
         app:layout_constraintVertical_bias="0.985"
         app:srcCompat="@drawable/vergastos" />
-
+    <!-- SE ESTABLECE UN BOTÓN CON IMAGEN PARA MÁS TARDE AÑADIRLE LA FUNCIONALIDAD
+             DESDE KOTLIN. -->
     <ImageButton
         android:id="@+id/btn_vtestigos"
         android:layout_width="81dp"
@@ -113,7 +124,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_av"
         app:layout_constraintVertical_bias="0.663"
         app:srcCompat="@drawable/vertestigos" />
-
+    <!-- SE ESTABLECE UN BOTÓN CON IMAGEN PARA MÁS TARDE AÑADIRLE LA FUNCIONALIDAD
+             DESDE KOTLIN. -->
     <ImageButton
         android:id="@+id/btn_config"
         android:layout_width="wrap_content"
@@ -127,5 +139,5 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_av"
         app:layout_constraintVertical_bias="0.65"
         app:srcCompat="@drawable/config" />
-
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>

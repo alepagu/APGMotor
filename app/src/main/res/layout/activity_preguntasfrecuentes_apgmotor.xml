@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +12,7 @@
     android:layout_height="match_parent"
     android:background="#F4D086"
     tools:context=".Preguntasfrecuentes_apgmotor">
-
+    <!-- SE INDICA EL TEXTO DE LA VENTANA QUE SE MUESTRA. -->
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
@@ -21,7 +26,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.113" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+                    PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/btn_ok"
         android:layout_width="wrap_content"
@@ -36,7 +42,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25"
         app:layout_constraintVertical_bias="0.764" />
-
+    <!-- ESTE ES EL ÚNICO TEXVIEW QUE REPRESENTA UN FONDO DE DIFERENTE COLOR
+         PARA AÑADIR EN SU INTERIOR EL RESTO DE ELEMENTOS NECESARIOS. -->
     <TextView
         android:id="@+id/textView25"
         android:layout_width="412dp"
@@ -48,7 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.501" />
-
+    <!-- TEXTO DE LAS AYUDAS AL COMPLETO -->
     <TextView
         android:id="@+id/textView24"
         android:layout_width="384dp"
@@ -66,5 +73,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23"
         app:layout_constraintVertical_bias="0.22" />
-
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>

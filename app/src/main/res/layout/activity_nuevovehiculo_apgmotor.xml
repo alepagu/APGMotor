@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +12,8 @@
     android:layout_height="match_parent"
     android:background="#F4D086"
     tools:context=".nuevovehiculo_apgmotor">
-
+    <!-- SE ESTABLECE UN BOTÓN CON IMAGEN PARA MÁS TARDE AÑADIRLE LA FUNCIONALIDAD
+     DESDE KOTLIN. -->
     <ImageButton
         android:id="@+id/btn_inicio"
         android:layout_width="wrap_content"
@@ -21,7 +27,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_av"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/inicio" />
-
+    <!-- SE ESTABLECE UN BOTÓN CON IMAGEN PARA MÁS TARDE AÑADIRLE LA FUNCIONALIDAD
+         DESDE KOTLIN. -->
     <ImageButton
         android:id="@+id/btn_vgastos"
         android:layout_width="95dp"
@@ -35,7 +42,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_av"
         app:layout_constraintVertical_bias="0.985"
         app:srcCompat="@drawable/vergastos" />
-
+    <!-- SE ESTABLECE UN BOTÓN CON IMAGEN PARA MÁS TARDE AÑADIRLE LA FUNCIONALIDAD
+         DESDE KOTLIN. -->
     <ImageButton
         android:id="@+id/btn_vtestigos"
         android:layout_width="81dp"
@@ -48,7 +56,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_av"
         app:layout_constraintVertical_bias="0.663"
         app:srcCompat="@drawable/vertestigos" />
-
+    <!-- SE ESTABLECE UN BOTÓN CON IMAGEN PARA MÁS TARDE AÑADIRLE LA FUNCIONALIDAD
+         DESDE KOTLIN. -->
     <ImageButton
         android:id="@+id/btn_config"
         android:layout_width="wrap_content"
@@ -63,7 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_av"
         app:layout_constraintVertical_bias="0.65"
         app:srcCompat="@drawable/config" />
-
+    <!-- SE INDICICA EL TEXTO DE LA VENTANA EN LA QUE EL USUARIO SE ENCUENTRA -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -77,7 +86,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101" />
-
+    <!-- ESTE ES EL ÚNICO TEXVIEW QUE REPRESENTA UN FONDO DE DIFERENTE COLOR
+             PARA AÑADIR EN SU INTERIOR EL RESTO DE ELEMENTOS NECESARIOS. -->
     <TextView
         android:id="@+id/textView5"
         android:layout_width="352dp"
@@ -91,7 +101,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.186" />
-
+    <!-- TEXTO PARA INDICAR LA MARCA QUE DESE EL USUARIO -->
     <TextView
         android:id="@+id/sleccion1"
         android:layout_width="wrap_content"
@@ -105,7 +115,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.065" />
-
+    <!-- TEXTO PARA INDICAR EL MODELO QUE DESE EL USUARIO -->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -120,7 +130,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/marcas"
         app:layout_constraintVertical_bias="0.032" />
-
+    <!-- TEXTO PARA INDICAR LOS KILÓMETROS QUE TIENE EL VEHÍCULO DEL USUARIO -->
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
@@ -135,7 +145,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/modelos"
         app:layout_constraintVertical_bias="0.042" />
-
+    <!-- TEXTO PARA INDICAR LA MATRÍCULA DEL VEHÍCULO -->
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -150,7 +160,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/km"
         app:layout_constraintVertical_bias="0.058" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+                PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/btn_add"
         android:layout_width="127dp"
@@ -165,7 +176,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/matricula"
         app:layout_constraintVertical_bias="0.121" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/marcas"
         android:layout_width="262dp"
@@ -179,7 +191,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleccion1"
         app:layout_constraintVertical_bias="0.026" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/modelos"
         android:layout_width="248dp"
@@ -193,7 +206,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.033" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/km"
         android:layout_width="246dp"
@@ -208,7 +222,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.049" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/matricula"
         android:layout_width="253dp"
@@ -221,5 +236,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:layout_constraintVertical_bias="0.104" />
-
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>

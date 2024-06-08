@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +12,8 @@
     android:layout_height="match_parent"
     android:background="#F4D086"
     tools:context=".ingresargastos_apgmotor">
-
+    <!-- ESTE ES EL ÚNICO TEXVIEW QUE REPRESENTA UN FONDO DE DIFERENTE COLOR
+         PARA AÑADIR EN SU INTERIOR EL RESTO DE ELEMENTOS NECESARIOS. -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="409dp"
@@ -20,7 +26,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.501" />
-
+    <!-- LAS DECLARACIONES DEL TIPO TEXTVIEW HAN SIDO UTILIZADAS PARA LOS TÍTULOS INDICATIVOS
+             DE LAS VENTANAS Y PARA TEXTOS FIJOS QUE INDICAN ACCIONES O ACLARACIONES QUE DEBE TENER
+             EN CUENTA EL USUARIO. -->
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
@@ -35,7 +43,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.257" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/importe"
         android:layout_width="350dp"
@@ -50,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18"
         app:layout_constraintVertical_bias="0.034" />
-
+    <!-- AQUÍ SE MUESTRA DONDE SE DEBEN INTRODUCIR LOS KILÓMETROS DEL VEHÍCULO. -->
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
@@ -65,7 +74,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/importe"
         app:layout_constraintVertical_bias="0.036" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/txtkm"
         android:layout_width="350dp"
@@ -80,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19"
         app:layout_constraintVertical_bias="0.027" />
-
+    <!-- AQUÍ SE MUESTRA EL TEXTO INDICATIVO PARA INTRODUCIR LA DESCRIPCIÓN. -->
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
@@ -95,7 +105,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtkm"
         app:layout_constraintVertical_bias="0.051" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/descripcion"
         android:layout_width="350dp"
@@ -111,7 +122,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
         app:layout_constraintVertical_bias="0.06" />
-
+    <!-- TEXTO INDICATIVO PARA LA INDICACIÓN DE LAS CATEGORÍAS. -->
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
@@ -126,7 +137,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descripcion"
         app:layout_constraintVertical_bias="0.085" />
-
+    <!-- AQUÍ SE INDICA DONDE SE INTRODUCE LA MATRÍCULA. -->
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
@@ -141,7 +152,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/nummatricula"
         android:layout_width="153dp"
@@ -159,7 +171,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+            PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/btn_agregar"
         android:layout_width="196dp"
@@ -174,7 +187,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.28" />
-
+    <!-- SE AÑADE UN COMPONENTE QUE PERMITE CREAR UN DESPLEGABLE DESDE KOTLIN CON LOS VALORES QUE NECESITEMOS -->
     <Spinner
         android:id="@+id/desplegableCategorias"
         android:layout_width="324dp"
@@ -186,5 +199,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.762" />
-
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>

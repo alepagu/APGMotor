@@ -77,15 +77,26 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código">
+    <list default="true" id="bd3ce560-86fe-46f7-ae11-fe01542b291c" name="Changes" comment="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todos los comentarios de las clases de Kotlin.">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Preguntasfrecuentes_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Preguntasfrecuentes_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Registro_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Registro_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Vertestigos_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/Vertestigos_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/nuevovehiculo_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/nuevovehiculo_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/paginaprincipal_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/paginaprincipal_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/planificarfecha_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/planificarfecha_apgmotor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/vergastos_apgmotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apgmotor/vergastos_apgmotor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cambiarcontrasenna_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresargastos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresargastos_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_nuevovehiculo_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_nuevovehiculo_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_paginaprincipal_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_paginaprincipal_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_planificarfecha_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_planificarfecha_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_preguntasfrecuentes_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_preguntasfrecuentes_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_vergastos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vergastos_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_vertestigos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vertestigos_apgmotor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/elementotestigos_apgmotor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/elementotestigos_apgmotor.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +223,7 @@
       <recent name="com.example.apgmotor" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PruebasUnitarias_apgmotor.pruebaCapacidadRendimiento">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="APGMotor.app.main" />
       <option name="DEPLOY" value="true" />
@@ -615,7 +626,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717685342343</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todos los comentarios de las clases de Kotlin.">
+      <option name="closed" value="true" />
+      <created>1717788423923</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1717788423923</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -648,7 +667,8 @@
     <MESSAGE value="El commit es de guardado y actualización con la versión definitiva sin conexión con la base de datos." />
     <MESSAGE value="Commit Final para la entrega del TFG para su revisión del día 27. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
     <MESSAGE value="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todo el funcionamiento con una mejora de renderización y modulación del código" />
+    <MESSAGE value="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todos los comentarios de las clases de Kotlin." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit casi definitivo para la entrega del TFG para su revisión del día 10. &#10;Este guardado incluye todos los comentarios de las clases de Kotlin." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/APGMotor$PruebasSistema_apgmotor_pruebaCapacidadRendimiento.ic" NAME="PruebasSistema_apgmotor.pruebaCapacidadRendimiento Coverage Results" MODIFIED="1717684818681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

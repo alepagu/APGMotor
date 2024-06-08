@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +12,8 @@
     android:layout_height="match_parent"
     android:background="#F4D086"
     tools:context=".planificarfecha_apgmotor">
-
+    <!-- SE PREPARA EL CALENADRIO PARA PODER ELEGIR FECHAS DENTRO DE LA APLICACIÓN,
+    EN KOTLIN SE RECOGE LA FECHA DEL SISTEMA. -->
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="338dp"
@@ -19,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:layout_constraintVertical_bias="0.053" />
-
+    <!-- SE INDICA EL TEXTO DE LA VENTANA QUE SE MUESTRA. -->
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
@@ -34,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.138" />
-
+    <!-- SE MUESTRA EL TEXTO EN INDICANDO UNA POSIBLE DESCRIPCIÓN PARA EL RECORDATORIO. -->
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
@@ -49,7 +55,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView"
         app:layout_constraintVertical_bias="0.061" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+         MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/editTextText3"
         android:layout_width="309dp"
@@ -62,7 +69,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
         app:layout_constraintVertical_bias="0.085" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+                        PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/btn_guardarfecha"
         android:layout_width="262dp"
@@ -78,4 +86,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText3"
         app:layout_constraintVertical_bias="0.238" />
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>

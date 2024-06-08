@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4D086">
-
+    <!-- AQUÍ SE INDICA DONDE SE ENCUENTRA EL USUARIO-->
     <TextView
         android:id="@+id/login_apg"
         android:layout_width="wrap_content"
@@ -23,7 +28,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <!-- ESTE ES EL ÚNICO TEXVIEW QUE REPRESENTA UN FONDO DE DIFERENTE COLOR
+             PARA AÑADIR EN SU INTERIOR EL RESTO DE ELEMENTOS NECESARIOS. -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="409dp"
@@ -37,7 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_apg"
         app:layout_constraintVertical_bias="0.088" />
-
+    <!-- AQUÍ SE INDICA PARA QUE SE UTILIZA EL REGISTRO-->
     <TextView
         android:id="@+id/descrip_text"
         android:layout_width="379dp"
@@ -54,7 +60,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+         PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/bt_registrate"
         android:layout_width="210dp"
@@ -70,7 +77,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descrip_text" />
-
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+         PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/bt_login"
         android:layout_width="210dp"
@@ -87,7 +95,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/introducecontrasenna"
         app:layout_constraintVertical_bias="0.115" />
-
+    <!-- AQUÍ SE INDICA DONDE SE INTRODUCE EL CORREO DEL USUARIO-->
     <TextView
         android:id="@+id/correo_text"
         android:layout_width="268dp"
@@ -101,7 +109,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_apg"
         app:layout_constraintVertical_bias="0.113" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+            MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/introducecorreo"
         android:layout_width="273dp"
@@ -116,7 +125,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/correo_text"
         app:layout_constraintVertical_bias="0.047" />
-
+    <!-- AQUÍ SE INDICA DONDE SE INTRODUCE LA CONTRASEÑA DEL USUARIO-->
     <TextView
         android:id="@+id/pasword_text"
         android:layout_width="172dp"
@@ -130,7 +139,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/introducecorreo"
         app:layout_constraintVertical_bias="0.082" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+            MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/introducecontrasenna"
         android:layout_width="276dp"
@@ -144,5 +154,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pasword_text"
         app:layout_constraintVertical_bias="0.051" />
-
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>

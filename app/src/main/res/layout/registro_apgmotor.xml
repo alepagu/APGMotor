@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Declaración del lenguaje utilizado con su versión y tipo de codificación "Idioma".
- Indicación de composición libre en la ventana, no sigue estructura líneal-->
+<?xml version="1.0" encoding="utf-8"?><!-- DECLARAMOS LA VERSION DE XML Y EL FORMATO DE CODIFICACIÓN -->
+<!-- INCIALIZAMOS UNA INTERFAZ SIN ORDEN LINEAL, ES DECIR QUE SE PUEDEN COLOCAR LOS
+ELEMEMNTOS EN CUALQUIER PARTE DE LA VENTANA.
+
+DENTRO DE LA INTERFAZ, SE REALIZAN LOS AJUSTES Y DECLARACIONES DE AQUELLOS ELEMENTOS
+NECESARIOS PARA LUEGO PODER INTERACTUAR CON EL LENGUAJE KOTLIN-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +12,7 @@
     android:layout_height="match_parent"
     tools:context=".Registro_apgmotor"
     android:background="#F4D086">
-
+    <!-- AQUÍ MOSTRAMOS EL TEXTO QUE INDICA LA ZONA EN LA QUE NOS ENCONTRAMOS. -->
     <TextView
         android:id="@+id/textoregistro"
         android:layout_width="wrap_content"
@@ -24,7 +27,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.113" />
-
+    <!-- ESTE ES EL ÚNICO TEXVIEW QUE REPRESENTA UN FONDO DE DIFERENTE COLOR
+             PARA AÑADIR EN SU INTERIOR EL RESTO DE ELEMENTOS NECESARIOS. -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="412dp"
@@ -36,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textoregistro"
         app:layout_constraintVertical_bias="0.186" />
-
+    <!-- AQUÍ INDICAMOS EL LUGAR EN EL QUE SE INTRODUCE EL NOMBRE DEL USUARIO. -->
     <TextView
         android:id="@+id/nombre"
         android:layout_width="wrap_content"
@@ -51,7 +55,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textoregistro"
         app:layout_constraintVertical_bias="0.065" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+        MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/textonombre"
         android:layout_width="260dp"
@@ -65,7 +70,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombre"
         app:layout_constraintVertical_bias="0.422" />
-
+    <!-- AQUÍ INDICAMOS DONDE SE INTRODUCE EL CORREO ELECTRÓNICO. -->
     <TextView
         android:id="@+id/correo"
         android:layout_width="wrap_content"
@@ -80,7 +85,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.372" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+            MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/textocorreo"
         android:layout_width="259dp"
@@ -94,7 +100,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/correo"
         app:layout_constraintVertical_bias="0.028" />
-
+    <!-- AQUÍ SE INDICA DONDE INTRODUCIR LA CONTRASEÑA -->
     <TextView
         android:id="@+id/contrasenna"
         android:layout_width="wrap_content"
@@ -109,7 +115,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textocorreo"
         app:layout_constraintVertical_bias="0.05" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+                MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/textocontrasenna"
         android:layout_width="265dp"
@@ -124,7 +131,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contrasenna"
         app:layout_constraintVertical_bias="0.033" />
-
+    <!-- AQUÍ SE PIDE REPETIR LA CONTRASEÑA. -->
     <TextView
         android:id="@+id/contrasenna2"
         android:layout_width="wrap_content"
@@ -139,7 +146,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textocontrasenna"
         app:layout_constraintVertical_bias="0.091" />
-
+    <!-- EL EDITTEXT PERMITE RECOGER VALORES QUE SON INTRODUCIDOS POR EL USUARIO
+            MEDIANTE LA INTERFAZ, DURANTE LA EJECUCIÓN DE LA APLICACIÓN-->
     <EditText
         android:id="@+id/textocontrasenna1"
         android:layout_width="263dp"
@@ -155,7 +163,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contrasenna2"
         app:layout_constraintVertical_bias="0.064" />
-<!-- Botón que permite ser ajustado con kotlin para conseguir la función deseada -->
+    <!-- SE AÑADE EL BOTÓN CON LOS ELEMENTOS DE COLOR Y TAMAÑO NECESARIO
+         PARA DESDE KOTLIN DARLE LA FUNCIONALIDAD NECESARIA-->
     <Button
         android:id="@+id/btnregistrar"
         android:layout_width="184dp"
@@ -171,5 +180,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textocontrasenna1"
         app:layout_constraintVertical_bias="0.223" />
-
+    <!-- CERRAMOS LA INTERFAZ CREADA PARA PODE ROBTENER LOS DATOS-->
 </androidx.constraintlayout.widget.ConstraintLayout>
