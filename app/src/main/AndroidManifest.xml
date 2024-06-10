@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?> <!-- Declaración de la versión y el lenguaje que se va a implementar -->
+<?xml version="1.0" encoding="utf-8"?> <!-- DECLARACIÓN DE LA VERSIÓN Y TIPO DE PROGRAMACIÓN A UTILIZAR -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- Permisos para poder usar la base de datos con internet -->
+    <!-- LOS DOS PERMISOS ESTABLECIDOS, SON PARA LA CONEXIÓN A INTERNET DEJANDO ASÍ EL ACCESO
+     A LAS REDES PREPARADO PARA ESTABLECER CONEXIÓN CON BASES DE DATOS Y APIS EXTERNAS-->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- Describimos las reglas que sigue este programa, y personalizamos el tema -->
+    <!-- LO QUE SE REALIZA A CONTINUACIÓN ES PARECIDO A UN FICHERO POM EN LOS PROYECTOS MAVEN,
+     SE ESTABLECE LA CONFIGURACIÓN DE LAS CLASES Y EL ORDEN DE INICIO EN LA APLICACIÓN. -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,7 +18,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <!-- Se añaden todas las clases y actividades necesarias para el desarrollo de la aplicación APGMotor -->
+        <!-- TODAS LAS ACTIVIDADES REFRENCIAN A LAS CLASES DE LA APLICACIÓN.
+        EL ORDEN EN EL QUE SE MUESTRA NO TIENE PORQUE SER EL ORDEN QUE SIGUEN DURANTE LA EJECUCIÓN,
+        ESTO SE DEBE A QUE LA APLICACIÓN SE MUEVE SEGÚN LO INDICADO POR EL USUARIO.-->
         <activity
             android:name=".Fallostestigos_apgmotor"
             android:exported="false" />
@@ -53,13 +57,18 @@
         <activity
             android:name=".Registro_apgmotor"
             android:exported="false" />
-        <!-- Indicamos que ventana se nos muestra primero y le añadimos una ventana de carag a la aplicación -->
+        <!-- EN ESTA ACTIVITY, ENCONTRAMOS QUE EL VALOR ES "TRUE" Y ES LA PRIMERA VENTANA
+        QUE APARECE TRAS ABRIR LA APLICACIÓN.
+        ADEMAS EL SPLASHTHEME, REFERENCIA A UNA PANTALLA DE CARGA QUE INCORPORA LA APP.
+        EL LABEL, ES LA ETIQUETA DEL NOMBRE DEL PROGRAMA Y EL NAME EL NOMBRE DE LA CLASE. -->
         <activity
             android:name=".Login_apgmotor"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/SplashTheme">
             <intent-filter>
+                <!-- AQUÍ SE REFLEJA EL FUNCIOAMIENTO DE QUE AL SER LA CLASE PRINCIPAL ACTÚA COMO MAIN,
+                 ADEMAS LA CATEGORÍA ES PREPARACIÓN DE ARRANQUE DE LA APLICACIÓN. -->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
